@@ -5,29 +5,29 @@ export default {
   browserPort: 3001,
   UIPort: 3002,
 
-  sourceDir: './../public/js/app/',
-  buildDir: './../public/js/build/',
+  sourceDir: './../public/code/',
+  buildDir: './../public/assets/',
 
   styles: {
-    src: 'app/styles/**/*.scss',
-    dest: './../public/js/build/css',
+    src: './../public/code/styles/**/*.*',
+    dest: './../public/assets/css',
     prodSourcemap: false,
     sassIncludePaths: []
   },
 
   scripts: {
-    src: 'app/js/**/*.js',
-    dest: './../public/js/build/js'
+    src: './../public/code/js/**/*.js',
+    dest: './../public/assets/js'
   },
 
   images: {
-    src: 'app/images/**/*',
-    dest: './../public/js/build/images'
+    src: './../public/code/images/**/*',
+    dest: './../public/assets/images'
   },
 
   fonts: {
-    src: ['app/fonts/**/*'],
-    dest: './../public/js/build/fonts'
+    src: ['./../public/code/fonts/**/*'],
+    dest: './../public/assets/fonts'
   },
 
   assetExtensions: [
@@ -45,14 +45,14 @@ export default {
   ],
 
   views: {
-    index: 'app/index.html',
-    src: 'app/views/**/*.html',
-    dest: 'app/js'
+    index: './../public/code/index.html',
+    src: './../public/code/views/**/*.html',
+    dest: './../public/code/js'
   },
 
   gzip: {
-    src: './../public/js/build/**/*.{html,xml,json,css,js,js.map,css.map}',
-    dest: './../public/js/build/',
+    src: './../public/assets/**/*.{html,xml,json,css,js,js.map,css.map}',
+    dest: './../public/assets/',
     options: {}
   },
 
